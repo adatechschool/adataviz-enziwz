@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <title>Adataviz | Enzo</title>
+    <style>
+      
+      header {
+      background-color: rgba(220, 220, 220, 0.302);
+      text-align: center;
+      padding: 10px;
+      text-shadow:rgba(0, 0, 0, 0.803);
+      position: flex;
+      inset: 0;
+      background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F1192224.jpg&f=1&nofb=1&ipt=fa2d7a6bcc390878561ebfee381dfd3e2a332d3654306819e5fd829edf537515");
+      background-size: cover;
+      background-position: center;
+      color:white
+      }
+      
+      .navbar {
+      display: flex;
+      background-color: #333;
+      }
+
+      
+      body {
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2023%2F07%2F01%2Ftravel%2F22hours-paris-tjzf%2F22hours-paris-tjzf-videoSixteenByNine3000.jpg&f=1&nofb=1&ipt=b60bee2c614e07aec456cf34039b662d3eee6b5fbcac55674dea65e9ca3f91ee");
+        background-size: cover;
+        background-position: center;
+        text-shadow:rgba(0, 0, 0, 0.803);
+        color: #ffffff;
+        }
+
+      h1 {color: rgb(255, 255, 255); text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.803);
+       font-family: "Roboto", sans-serif;
+       font-optical-sizing: auto;
+       font-weight: 900;
+       font-style: normal;
+       font-variation-settings:
+       "wdth" 100;
+      }
+
+      /* Style the topnav */
+      ul.topnav {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #7d6565c2;
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 900;
+      font-style: normal;
+      font-variation-settings:
+      "wdth" 100;
+      }
+
+
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #3333339c;
+      display: flex;
+      }
+
+      ul li a {
+      display: block;
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+
+      ul li a:hover {
+      background-color: #111111;
+      }
+
+      p{
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+       }
+
+      .iframe-container {
+      width: 100%;
+      text-align: center;
+      }
+      .iframe-container iframe {
+      margin: 0 auto;
+      display: block;
+      position: flex
+      
+      }
+
+
+      div.flex-container {
+      display: flex;
+  /* Show the flex items horizontally */
+      flex-direction: row;
+      }
+
+      div.flex-container > div {
+      margin: 10px;
+      }
+
+      footer {  
+      background-color: #7d6565c2;
+      padding: 8px;
+      text-align: center;
+      color:white
+      
+      }
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+} 
+
+      @media screen and (max-width: 700px) {
+      .container, .navbar {   
+      flex-direction: column; 
+      }
+
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="image"></div>
+
+    <header>
+      <h1>LES ASCENSEURS DE PARIS</h1>
+      <p>Découvrez toutes les données publiques sur les ascenceurs dans Paris.</p>
+    </header>
+
+      
+
+    <ul class="topnav">
+    <li><a href="http://127.0.0.1:5500/index.html#"">Carte</a></li>
+    <li><a href="http://127.0.0.1:5500/index2.html#"">Tableau API</a></li>
+    <li><a href="#">Info</a></li>
+    </ul>
+    
+    <p>Voici l'emplacement de tout les ascenseurs trouvable sur cette carte:</p>
+
+    <div class="flex-container"> 
+    
+    <div class="iframe-container">
+    <iframe src="https://opendata.paris.fr/explore/embed/dataset/ascenseurs-escalators-tele-surveillance-temps-reel/map/?disjunctive.heure_ouverture&disjunctive.statut&sort=statut&basemap=jawg.dark&location=12,48.87217,2.32841" width="1200" height="800"></iframe>
+    </div>
+    </div>
+
+    <footer>
+    <p>Site crée par Enzo Iwandza. (2026)</p>
+    </footer>  
+  </body>  
+</html>
